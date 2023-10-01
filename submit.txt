@@ -1,0 +1,41 @@
+Question 1
+
+Question 2
+"The install worked successfully! Congratulations!
+You are seeing this page because DEBUG=True is in your settings file and you have not configured any URLs."
+
+Question 3
+when navigating to '/', it shows 404 Page not found, and some defined URLs
+1. polls/
+2. admin/
+
+when navigating to 'polls/', it shows "Hello, world. You're at the polls index."
+
+Question 4
+It updates/creates the database schema according to the changes you made to models.py
+Why? 
+It is automatic, so you don't need to use SQL commands to update the schema of the database everytime you update the models.
+It gurantees that the model and the schema are aligned.
+Being able to track the history changes to the modles. If generates a folder that contains some files. 0001_initial.py tells you what the initial model looks like, and the following file will tell you the add/delete of a field.
+
+Question 5
+The munipulation of "Authentication and Authorization" and "polls".
+In "polls", I can add or edit a question or a choice.
+
+To get custom modles to appear in the Django admin page, you need to bind it to the admin but adding admin.site.register(/* model name */)
+
+
+Question 6
+"/polls/38/": "You're looking at question 38."
+"/polls/38/results": "You're looking at the results of question 38."
+"/polls/38/vote": "You're voting on question 38."
+
+If I don't put a number, I'll 404 page not found.
+Replace "int" with "str"
+
+Question 7
+It's flexible. Otherwise, if you chagne the url of a view, you will need to change everything that references to it.
+
+Question 8
+Generic view simplifies the steps to write the code. Take the DetailView as an example, you don't need to write code to get object from a model and call the render function to render by template, all you need to do is to specify some attributes such as model and template.
+
